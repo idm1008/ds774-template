@@ -26,7 +26,7 @@
   <!-- jumbotron -->
   <div class="jumbotron text-center" style="background-color: burlywood;">
     <!-- Your Image here -->
-    <img src="{{url_for('static',filename='tick2.png')}}" alt="" style="width:200px;height:200px;">
+    <img src="{{url_for('static',filename='tick2.png')}}" alt="" style="width:200px;height:250px;">
 
     <!-- rounded -->
     <!-- <img src="{{url_for('static',filename='UNH.png')}}" class="rounded-circle" alt=""> -->
@@ -56,6 +56,14 @@
         (url_for('courses'), 'courses', 'Courses'),
         (url_for('contact'), 'contact', 'Contact'),
         (url_for('admin'), 'admin', 'Admin')
+
+        <!-- (url_for('home'), 'home', 'Home'),
+        (url_for('documents'), 'documents', 'Documents'),
+        (url_for('announcements'), 'announcements', 'Announcements'),
+        (url_for('directory'), 'directory', 'Directory')
+        (url_for('events'), 'events', 'Events')
+        (url_for('issueslog'), 'issueslog', 'Issues Log') -->
+
     ] -%}
     <!-- Loop to set proper link active in Navbar -->
     {% set active_page = active_page|default('home') -%}
