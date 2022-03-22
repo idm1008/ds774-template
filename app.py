@@ -27,9 +27,7 @@ def directory():
 def events():
     return render_template('events.html')
 
-@app.route("/courses")
-def courses():
-    return render_template('courses.html')
+
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
