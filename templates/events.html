@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}<title>Events</title>{% endblock %}
+{% set active_page = "events" %}
+
+{% block content %}
+ <!-- container for tablular structure: 1 row -->
+<div class="container">
+  <div class="row">
+
+    <!-- column 1 -->
+    <div class="col-sm-6">
+      <h3 style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 50px; font-weight: bold;">Potluck Dinner!</h3>
+
+      <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">We can't wait to host a potluck dinner this upcoming friday to celebrate our employees, and the start of the warm weather. We are proud of all your hard work and want to host this social event to show our appreciation.</p>
+      <img src="{{url_for('static',filename='potluck.jpg')}}" class="rounded mx-auto d-block" alt="" width="350" height="250">
+      <!-- <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: bold; text-align: center;">Contact us for a free quote today!</p> -->
+    </div>
+    <div class="col-sm-6">
+
+      <!-- column 2 -->
+
+      <h3 style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 50px; font-weight: bold;">St. Pattys Day Party!</h3>
+
+    
+      <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">Thursday, March 17, we will be hosting a St. Patricks Day party after work. We like to work hard and party harder here at Ian's Pest Control, and don't forget to wear green!</p>
+      <img src="{{url_for('static',filename='stpats.jpeg')}}" class="rounded mx-auto d-block" alt="" width="350" height="250">
+  
+    </div>
+  </div>
+</div>
+{% endblock %}

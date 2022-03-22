@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}<title>Directory</title>{% endblock %}
+{% set active_page = "directory" %}
+
+{% block content %}
+ 
+<h3 style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 50px;">Employee Directory</h3>
+
+<div>
+  <table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Job Title</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone #</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Joe</th>
+      <td>Drover</td>
+      <td>Project Manager</td>
+      <td>jdrover@pests.com</td>
+      <td>(603) 123-4567</td>
+    </tr>
+    <tr>
+      <th scope="row">Tyler</th>
+      <td>Pike</td>
+      <td>Salesman</td>
+      <td>tpike@pests.com</td>
+      <td>(603) 123-4567</td>
+    </tr>
+    <tr>
+      <th scope="row">Camdyn</th>
+      <td>Loring</td>
+      <td>Pest Control Specialist</td>
+      <td>cloring@pests.com</td>
+      <td>(603) 123-4567</td>
+    </tr>
+    <tr>
+      <th scope="row">Jake</th>
+      <td>Kirane</td>
+      <td>Receptionist</td>
+      <td>jkirane@pests.com</td>
+      <td>(603) 123-4567</td>
+    </tr>
+    <tr>
+      <th scope="row">Patrick</th>
+      <td>Millstone</td>
+      <td>Intern</td>
+      <td>pmillstone@pests.com</td>
+      <td>(603) 123-4567</td>
+    </tr>
+  </tbody>
+  </table>
+</div>
+<div>
+    
+</div>
+
+{% endblock %}
+

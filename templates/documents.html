@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block title %}<title>Documents</title>{% endblock %}
+{% set active_page = "documents" %}
+
+{% block content %}
+<div class="container">
+  <h3 style="font-weight: bold;">Important Company Documents</h3>
+
+        <p>List of Documents:
+          <ul>
+            <li>Bylaws for corporations</li>
+            <li>Meeting minutes</li>
+            <li>Non-disclosure Aggreements</li>
+            <li>Client Liability Contract</li>
+          </ul>
+          <p>Links can be found below!</p>
+        </p>
+</div>
+<!-- container for tablular structure: 1 row -->
+<div class="container">
+  <div class="row">
+  
+  <!-- column 1 -->
+    
+      <div class="col-sm-12">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Doc ID Number</th>
+              <th scope="col">Title</th>
+              <th scope="col">Update Date</th>
+              <th scope="col">Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Bylaws for corporations</td>
+              <td>7/12/21</td>
+              <td><a href="https://docs.google.com/document/d/1ZI1ZHpAtEvgqNxL-mOGD5gBCfJqhM8_gzf7AIsfJ2sw/edit?usp=sharing">BY LAWS</a></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Meeting minutes</td>
+              <td>9/23/21</td>
+              <td><a href="https://docs.google.com/document/d/1ZI1ZHpAtEvgqNxL-mOGD5gBCfJqhM8_gzf7AIsfJ2sw/edit?usp=sharing">MEETING MINUTES</a></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Non-disclosure Aggreements</td>
+              <td>9/17/21</td>
+              <td><a href="https://docs.google.com/document/d/1ZI1ZHpAtEvgqNxL-mOGD5gBCfJqhM8_gzf7AIsfJ2sw/edit?usp=sharing">NON-DISC. AGGREEMENTS</a></td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Client Liability Contract</td>
+              <td>3/2/21</td>
+              <td><a href="https://docs.google.com/document/d/1ZI1ZHpAtEvgqNxL-mOGD5gBCfJqhM8_gzf7AIsfJ2sw/edit?usp=sharing">LIABILITY CONTRACT</a></td>
+            </tr>
+          </tbody>
+        </table>
+        
+        
+
+
+      </div>
+
+      
+      <!-- <img src="{{url_for('static',filename='docs.jpeg')}}" class="rounded mx-auto d-block" alt="" width="900" height="350"> -->
+  </div>
+</div>
+{% endblock %}

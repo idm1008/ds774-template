@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% set active_page = "home" %}
+
+{% block title %}<title>Home</title>{% endblock %}
+{% block content %}
+<!-- container for tablular structure: 1 row -->
+<div class="container">
+    <div class="row">
+
+      <!-- column 1 -->
+      <div class="col-sm-6">
+        <h3 style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 50px; font-weight: bold;">Covid-19 Update</h3>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">As we are seeing cases drop recently we are drooping our mask mandate. While masks are now opptional we still encoiurage you to wear one if you happen to feel sick. Stay safe out there, and we can't wait to see your faces again!</p>
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: bold; text-align: center;">This will take affect March 21st</p>
+        <img src="{{url_for('static',filename='mask.jpg')}}" class="rounded mx-auto d-block" alt="" width="350" height="210">
+      </div>
+      <div class="col-sm-6">
+
+        <!-- column 2 -->
+
+        <h3 style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 50px; font-weight: bold;">Career Opportunities!!</h3>
+
+      
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">We are now hiring in all departments. We have many great opportunities to expand your career while offering many great benefits. Below are just some of the jobs we are hiring for:
+        <ul>
+          <li>Pest Control Technician/Specialist</li>
+          <li>Customer Service/Sales</li>
+          <li>Management Positions</li>
+        </ul>
+        
+        </p>
+
+      
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">Apply within!</p>
+        <img src="{{url_for('static',filename='hiring.png')}}" class="rounded mx-auto d-block" alt="">
+      </div>
+    </div>
+  </div>
+{% endblock %}
